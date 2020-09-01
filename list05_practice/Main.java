@@ -8,7 +8,7 @@ public class Main {
 		StrongBox<Hero> s = new StrongBox<Hero>(DIAL); /*ここの「DIAL」注意。	import無しなら 「KeyType.DIAL」と記述。*/
 		Hero h = new Hero();
 		s.put(h);
-//		s.put("s");
+//		s.put("s");         StrongBox<Hero>をStrongBox<String>にしても成功。
 		System.out.println("h="+h);
 		System.out.println("s.get()"+s.get());
 		System.out.println("s.get()"+s.get());
